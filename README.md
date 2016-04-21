@@ -1,6 +1,6 @@
 # Design Patterns
 
-Based on Head First Design Patterns. Written in Java
+Based on [Head First Design Patterns](http://www.headfirstlabs.com/books/hfdp/). Written in Java
 
 # Strategy Pattern
 
