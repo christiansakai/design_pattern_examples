@@ -1,6 +1,6 @@
-# Design Patterns
+# Java Design Pattern Examples
 
-Based on [Head First Design Patterns](http://www.headfirstlabs.com/books/hfdp/). Written in Java
+Based on [Head First Design Patterns](http://www.headfirstlabs.com/books/hfdp/).
 
 # Strategy Pattern
 
