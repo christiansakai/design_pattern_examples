@@ -30,7 +30,7 @@ var mySingleton = (function() {
   return {
     getInstance: function() {
 
-      if (!isntance) {
+      if (!instance) {
         instance = init();
       }
 
@@ -43,4 +43,35 @@ var mySingleton = (function() {
 
 var myBadSingleton = (function() {
 
+  var instance;
+
+  function init() {
+
+    var privateRandomNumber = Math.random();
+
+    return {
+      getRandomNumber: function() {
+        return privateRandomNumber;
+      }
+    };
+  
+  }
+
+  return {
+    getInstance: function() {
+      
+      instance = init();
+
+      return instance;
+    }
+  };
+
 })();
+
+var singleA = mySingleton.getInstance();
+var singleB = mySingleton.getInstance();
+console.log(singleA.getRandomNumber() === singleB.getRandomNumber());
+
+var badSingleA = myBadSingleton.getInstance();
+var badSingleB = myBadSingleton.getInstance();
+console.log(badSingleA.getRandomNumber() === badSingleB.getRandomNumber());
